@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+version="2.4">
+<!-- Switch produit -->
+
+    <servlet>
+        <servlet-name>SwitchProduitServlet</servlet-name>
+        <servlet-class>servlet.vente.SwitchProduitServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>SwitchProduitServlet</servlet-name>
+        <url-pattern>/vente/switchProduit</url-pattern>
+    </servlet-mapping>  
+
+
+<!-- Modification dans un panier -->
+
+    <servlet>
+        <servlet-name>UpdatePanier</servlet-name>
+        <servlet-class>servlet.vente.UpdatePanier</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>UpdatePanier</servlet-name>
+        <url-pattern>/vente/updatePanier</url-pattern>
+    </servlet-mapping>
+
+<!-- Suppresion dans un panier -->
+
+    <servlet>
+        <servlet-name>DeletePanier</servlet-name>
+        <servlet-class>servlet.vente.DeletePanier</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>DeletePanier</servlet-name>
+        <url-pattern>/vente/deletePanier</url-pattern>
+    </servlet-mapping>
+
+<!-- ConfirmerAchat -->
+
+    <servlet>
+        <servlet-name>ConfirmerAchat</servlet-name>
+        <servlet-class>servlet.vente.ConfirmerAchat</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>ConfirmerAchat</servlet-name>
+        <url-pattern>/vente/confirmerAchat</url-pattern>
+    </servlet-mapping>
+
+<!-- panier -->
+
+    <servlet>
+        <servlet-name>GoPanier</servlet-name>
+        <servlet-class>servlet.vente.GoPanier</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>GoPanier</servlet-name>
+        <url-pattern>/vente/panier</url-pattern>
+    </servlet-mapping>
+
+
+<!-- Lien makany @ facture mivadika pdf -->
+
+    <servlet>
+        <servlet-name>CreationFactureEntreeServlet</servlet-name>
+        <servlet-class>servlet.vente.CreationFactureEntreeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>CreationFactureEntreeServlet</servlet-name>
+        <url-pattern>/vente/creation_facture</url-pattern>
+    </servlet-mapping>
+
+<!-- Lien makany @ facture -->
+
+    <servlet>
+        <servlet-name>ListeFactureEntreeServlet</servlet-name>
+        <servlet-class>servlet.vola.ListeFactureEntreeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>ListeFactureEntreeServlet</servlet-name>
+        <url-pattern>/vola/liste_facture</url-pattern>
+    </servlet-mapping>
+
+
+<!-- Lien makany @ liste facture -->
+
+    <servlet>
+        <servlet-name>LienFactureEntreeServlet</servlet-name>
+        <servlet-class>servlet.vente.LienFactureEntreeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>LienFactureEntreeServlet</servlet-name>
+        <url-pattern>/vente/lien_facture</url-pattern>
+    </servlet-mapping>
+
+<!-- Liste créance -->
+
+    <servlet>
+        <servlet-name>ListeCreanceEntreeServlet</servlet-name>
+        <servlet-class>servlet.vola.ListeCreanceEntreeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>ListeCreanceEntreeServlet</servlet-name>
+        <url-pattern>/vola/liste_creance</url-pattern>
+    </servlet-mapping>
+
+<!-- Recherche report -->
+
+    <servlet>
+        <servlet-name>ListeReportRechercheServlet</servlet-name>
+        <servlet-class>servlet.vola.ListeReportRechercheServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>ListeReportRechercheServlet</servlet-name>
+        <url-pattern>/vola/recherche_report</url-pattern>
+    </servlet-mapping>
+    
+<!-- liste transaction -->
+    <servlet>
+        <servlet-name>ListeTransactionServlet</servlet-name>
+        <servlet-class>servlet.vola.ListeTransactionServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>ListeTransactionServlet</servlet-name>
+        <url-pattern>/vola/liste_transaction</url-pattern>
+    </servlet-mapping>
+<!-- ajout report -->
+    <servlet>
+        <servlet-name>AjoutReportServlet</servlet-name>
+        <servlet-class>servlet.vola.AjoutReportServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>AjoutReportServlet</servlet-name>
+        <url-pattern>/vola/ajout_report</url-pattern>
+    </servlet-mapping>
+<!-- statistique annee -->
+    <servlet>
+        <servlet-name>StatistiqueAnneeSubmitServlet</servlet-name>
+        <servlet-class>servlet.culutre.StatistiqueAnneeSubmitServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>StatistiqueAnneeSubmitServlet</servlet-name>
+        <url-pattern>/statistique/annee</url-pattern>
+    </servlet-mapping>
+<!-- planning -->
+    <servlet>
+        <servlet-name>PlanningEntreeServlet</servlet-name>
+        <servlet-class>servlet.culutre.PlanningEntreeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>PlanningEntreeServlet</servlet-name>
+        <url-pattern>/planning</url-pattern>
+    </servlet-mapping>
+
+<!-- insertion event entree -->
+    <servlet>
+        <servlet-name>InsertionEventEntreeServlet</servlet-name>
+        <servlet-class>servlet.culutre.InsertionEventEntreeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>InsertionEventEntreeServlet</servlet-name>
+        <url-pattern>/evenement/ajout</url-pattern>
+    </servlet-mapping>
+
+<!-- statistique entree -->
+    <servlet>
+        <servlet-name>StatistiqueEntreeServlet</servlet-name>
+        <servlet-class>servlet.culutre.StatistiqueEntreeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>StatistiqueEntreeServlet</servlet-name>
+        <url-pattern>/statistique</url-pattern>
+    </servlet-mapping>
+
+<!-- stock entree -->
+    <servlet>
+        <servlet-name>StockEntreeServlet</servlet-name>
+        <servlet-class>servlet.culutre.StockEntreeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>StockEntreeServlet</servlet-name>
+        <url-pattern>/stock</url-pattern>
+    </servlet-mapping>
+
+
+<!-- Ressouce entree  Manombola etoooooo eee  -->
+
+    <servlet>
+        <servlet-name>RessourceEntreeServlet</servlet-name>
+        <servlet-class>servlet.culutre.RessourceEntreeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>RessourceEntreeServlet</servlet-name>
+        <url-pattern>/ressource</url-pattern>
+    </servlet-mapping>
+
+<!-- Ressouce submit  -->
+
+    <servlet>
+        <servlet-name>RessourceSubmitServlet</servlet-name>
+        <servlet-class>servlet.culutre.ResourceSubmitServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>RessourceSubmitServlet</servlet-name>
+        <url-pattern>/ajoutressource</url-pattern>
+    </servlet-mapping>
+
+
+<!-- Ressouce entree  -->
+
+    <servlet>
+        <servlet-name>ProduitIntermediaireEntreeServlet</servlet-name>
+        <servlet-class>servlet.culutre.ProduitIntermediaireEntreeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>ProduitIntermediaireEntreeServlet</servlet-name>
+        <url-pattern>/produitintermediaire</url-pattern>
+    </servlet-mapping>
+
+<!-- Ressouce submit  -->
+
+    <servlet>
+        <servlet-name>ProduitIntermediaireSubmitServlet</servlet-name>
+        <servlet-class>servlet.culutre.ProduitIntermediaireSubmitServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>ProduitIntermediaireSubmitServlet</servlet-name>
+        <url-pattern>/ajoutplantation</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- Recolte entree  -->
+
+    <servlet>
+        <servlet-name>RecolteEntreeServlet</servlet-name>
+        <servlet-class>servlet.culutre.RecolteEntreeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>RecolteEntreeServlet</servlet-name>
+        <url-pattern>/recolte</url-pattern>
+    </servlet-mapping>
+
+<!-- Recolte submit  -->
+
+    <servlet>
+        <servlet-name>RecolteSubmitServlet</servlet-name>
+        <servlet-class>servlet.culutre.RecolteSubmitServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>RecolteSubmitServlet</servlet-name>
+        <url-pattern>/recolteproduit</url-pattern>
+    </servlet-mapping>
+
+<!-- Ajout prouduits finis submit -->
+    <servlet>
+        <servlet-name>AjoutProductionSubmitServlet</servlet-name>
+        <servlet-class>servlet.production.AjoutProductionSubmitServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>AjoutProductionSubmitServlet</servlet-name>
+        <url-pattern>/production/ajout/submit</url-pattern>
+    </servlet-mapping>
+<!-- Ajout prouduits finis -->
+    <servlet>
+        <servlet-name>AjoutProductionEntreeServlet</servlet-name>
+        <servlet-class>servlet.production.AjoutProductionEntreeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>AjoutProductionEntreeServlet</servlet-name>
+        <url-pattern>/production/ajout</url-pattern>
+    </servlet-mapping>
+<!-- statistiqie production -->
+    <servlet>
+        <servlet-name>StatitiqueProduitEntreeServlet</servlet-name>
+        <servlet-class>servlet.production.StatitiqueProduitEntreeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>StatitiqueProduitEntreeServlet</servlet-name>
+        <url-pattern>/statistique/production</url-pattern>
+    </servlet-mapping>
+<!-- Ajout reports -->
+    <servlet>
+        <servlet-name>AjoutReportServlet</servlet-name>
+        <servlet-class>servlet.AjoutReportServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>AjoutReportServlet</servlet-name>
+        <url-pattern>/ajoutreport</url-pattern>
+    </servlet-mapping>
+<!-- Liste reports -->
+    <servlet>
+        <servlet-name>ReportServlet</servlet-name>
+        <servlet-class>servlet.ReportServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>ReportServlet</servlet-name>
+        <url-pattern>/listereport</url-pattern>
+    </servlet-mapping>
+</web-app>

@@ -1,0 +1,15 @@
+sass _main.scss main.css
+sass _animation.scss animation.css
+sass _breadcrumb.scss breadcrumb.css
+sass  _button.scss button.css
+sass _footer.scss footer.css
+sass _global.scss global.css
+sass  _gutenberg.scss gutenberg.css
+sass _header.scss header.css
+sass  _mixins.scss mixins.css
+sass  _portfolio.scss portfolio.css
+sass  _preloader.scss preloader.css
+sass _product.scss product.css
+sass  _search_popup.scss search_popup.css
+sass _slider.scss slider.css
+sass _widgets.scss widgets.css
